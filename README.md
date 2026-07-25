@@ -58,8 +58,8 @@ The datasets contain licensed article content and are therefore not part of this
 | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `data/300p_human_tiab_final.xlsx`             | 300 papers with columns`No.`, `Title`, `Abstract`, `Authors`, `HUMAN_Classification` (`Relevant` / `Not Relevant` / `Uncertain`) — human title/abstract screening labels |
 | `data/300p_human_fulltext_final.xlsx`         | The same 300 papers with column`Human_Fulltext_Classification` (`Relevant` / `Not Relevant`) — human full-text screening labels                                                    |
-| `data/300p_full_text_md/docling/<No.>.md`     | Full text of each paper, converted from PDF with[Docling](https://github.com/docling-project/docling), one markdown file per paper named by its `No.`                                    |
-| `data/300p_full_text_md/pymupdf4llm/<No.>.md` | The same full texts converted with[PyMuPDF4LLM](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/)                                                                                     |
+| `data/300p_full_text_md/docling/<No.>.md`     | Full text of each paper, converted from PDF with [Docling](https://github.com/docling-project/docling), one markdown file per paper named by its `No.`                                    |
+| `data/300p_full_text_md/pymupdf4llm/<No.>.md` | The same full texts converted with [PyMuPDF4LLM](https://pymupdf.readthedocs.io/en/latest/pymupdf4llm/)                                                                                     |
 
 For the tabular datasets, a `.csv` file with the same name is accepted as a fallback to `.xlsx`.
 
