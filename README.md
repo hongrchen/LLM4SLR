@@ -12,23 +12,24 @@ Each script runs one model over a dataset labeled by human reviewers, saves the 
 ```
 .
 ├── README.md
-├── LICENSE                       # MIT license
-├── pyproject.toml                # project metadata + dependencies (for uv)
-├── requirements.txt              # same dependencies, for pip users
-├── title_abstract_screening/     # one script per model (self-contained)
+├── LICENSE                                # MIT license
+├── pyproject.toml                         # project metadata + dependencies (for uv)
+├── requirements.txt                       # same dependencies, for pip users
+├── LLM4SLR_Supplementary_Materials.pdf    # supplementary materials
+├── title_abstract_screening/              # one script per model (self-contained)
 │   ├── tiab_gemma3-12b-it.py
 │   ├── ...
 │   └── tiab_qwen3-4b-it.py
 ├── fulltext_screening/
-│   ├── fulltext_common.py        # shared helpers (data loading, OOM retry, evaluation, run logging)
-│   ├── fulltext_gemma3-12b-it.py # one script per model
+│   ├── fulltext_common.py                 # shared helpers (data loading, OOM retry, evaluation, run logging)
+│   ├── fulltext_gemma3-12b-it.py          # one script per model
 │   ├── ...
 │   └── fulltext_qwen3-4b-it.py
 ├── data/
-│   ├── 300p_human_tiab_final.xlsx      # human title/abstract labels (included)
-│   ├── 300p_human_fulltext_final.xlsx  # human full-text labels (included)
-│   └── 300p_full_text_md/              # full texts as markdown (not included, see below)
-└── results/                      # created automatically by the scripts
+│   ├── 300p_human_tiab_final.xlsx         # human title/abstract labels (included)
+│   ├── 300p_human_fulltext_final.xlsx     # human full-text labels (included)
+│   └── 300p_full_text_md/                 # full texts as markdown (not included, see below)
+└── results/                               # created automatically by the scripts
 ```
 
 ## Setup
